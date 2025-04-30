@@ -1,24 +1,21 @@
 #include<stdio.h>
-
-void print_pattern(int);// Function prototype   :-)
-
-int main () {
-    int n;
-    printf("Enter number of rows : ");
+int main() {
+    int i,j,k,n;
+    printf("Enter number of lines : ");
     scanf("%d", &n);
-    print_pattern(n); // Function call  :-) 
-    return 0;
-}
-
-void print_pattern(int n) {   // Function definition  :-)
-    int i,j;
+    int nst=1;
     for(i=1;i<=n;i++) {
-        for(j=1;j<=n-i;j++) {
+        for(k=1;k<=n-i;k++) {
             printf(" ");
         }
-        for(j=1;j<=i;j++) {
-            printf("* ");
+        for(j=1;j<=nst;j++) {
+            printf("*");
         }
+        nst = nst + 2;
         printf("\n");
+        
     }
+   
+
+    return 0;
 }
