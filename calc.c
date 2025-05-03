@@ -4,7 +4,7 @@ int main()
     int a,b,sum,sub,mul,div;
     printf("enter first number : ");
     scanf("%d", &a);
-    printf("%d", &b);
+    printf("enter second number : ");
     scanf("%d", &b);
     sum=a+b;
     sub=a-b;

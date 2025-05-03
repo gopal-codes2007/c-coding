@@ -7,7 +7,7 @@ int main() {
     printf("Enter a number : ");
     scanf("%d", &n);
     printf("Fibonacci series : %d %d ",a,b);
-    for(i=1;i<=n;i++) {
+    for(i=1;i<=n-2;i++) {
         sum = a + b;
         a = b;
         b = sum;
