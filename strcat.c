@@ -3,7 +3,7 @@
 int main () {
     char first_name[50];
     char last_name[50];
-    printf("Please enyter your first name : ");
+    printf("Please enter your first name : ");
     fgets(first_name, 50, stdin);
     printf("Enter your last name : ");
     fgets(last_name, 50, stdin);
