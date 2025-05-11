@@ -2,12 +2,12 @@
 int main() {
     FILE *fptr;
     fptr = fopen("Test.txt", "r");
-    char ch = fgetc(fptr);
+    char ch;
+    ch = fgetc(fptr);
     while(ch != EOF) {
         printf("%c", ch);
         ch = fgetc(fptr);
     }
-    fclose(fptr);
-    printf("\nThanks for thinking :->");
+    printf("\n");
     return 0;
 }
