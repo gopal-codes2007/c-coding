@@ -9,5 +9,6 @@ int main() {
         ch = fgetc(fptr);
     }
     printf("\n");
+    fclose(fptr);
     return 0;
 }
