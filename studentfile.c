@@ -17,6 +17,8 @@ int main() {
     fprintf(fptr, "%s\n", name);
     fprintf(fptr, "%d\n", age);
     fprintf(fptr, "%f\n", cgpa);
-    
+
+    fclose(fptr);
+
     return 0;
 }
