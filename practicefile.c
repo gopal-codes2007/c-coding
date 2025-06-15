@@ -1,13 +1,23 @@
 #include<stdio.h>
 int main() {
-    FILE *fptr;
-    fptr = fopen("Test.txt", "r");
-    char ch = fgetc(fptr);
-    while(ch != EOF) {
-        printf("%c", ch);
-        ch = fgetc(fptr);
+    int r=0,n,on;
+    printf("Welcome to reverse & palindrome number !");
+    printf("\nEnter the number which number are you want to print : ");
+    scanf("%d", &n);
+    on=n;
+    while(on>0) {
+        r=r*10;
+        r=r+(on%10);
+        on/=10;
+
     }
-    fclose(fptr);
-    printf("\nThanks for thinking :->");
+    on=n;
+    printf("Reverse number is %d\n", r);
+    if(r==on) {
+        printf("This number is palindrome ...\n");
+    }
+    else {
+        printf("This number is not palindrome number .....");
+    }
     return 0;
 }
