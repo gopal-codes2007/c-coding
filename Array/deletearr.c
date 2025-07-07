@@ -4,7 +4,7 @@ int main()
     int n, i, a;
     printf("Enter the number of terms of the array: ");
     scanf("%d", &n);
-    int arr[1000];
+    int arr[100];
     printf("Enter the elements of the array:\n");
     for(i = 0; i < n; i++)
     {

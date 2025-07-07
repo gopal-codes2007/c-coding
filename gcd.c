@@ -6,17 +6,14 @@ int main()
     scanf("%d", &n);
     printf("Enter second number : ");
     scanf("%d", &m);
-    while(n!=m)
-    {
-        if(n>m)
-        {
+    while(n!=m) {
+        if(n>m) {
             n=n-m;
         }
-        else
-        {
+        else {
             m=m-n;
         }
     }
-    printf("\n GCD of two numbers is %d",n);
+    printf("\n GCD of two numbers is %d",m);
     return 0;
 }
